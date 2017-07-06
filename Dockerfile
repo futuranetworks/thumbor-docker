@@ -19,8 +19,8 @@ RUN pip install thumbor
 
 ADD thumbor.conf /root/thumbor.conf
 
-EXPOSE 8880
+EXPOSE 8080
 
 ENTRYPOINT ["/usr/local/bin/thumbor"]
 
-CMD ["--port=8880", "-c", "/root/thumbor.conf"]
+CMD ["--port=8080", "-c", "/root/thumbor.conf"]
